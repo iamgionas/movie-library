@@ -1,0 +1,16 @@
+{
+  "name": "movie-vanilla-js",
+  "version": "1.0.0",
+  "description": "Movie library made with vanilla js",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Gionas",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.32.8"
+  }
+}
