@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    height: 250px;
+  }
+}
+
+.search {
+  background-color: #2B2B37;
+  border-radius: 1.5rem;
+  padding-left: 3rem;
+  transition: all 0.3s;
+
+  &:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 0.7rem 3rem rgba(#615551, 0.08);
+  }
+
+  &__field {
+    border: none;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.7rem;
+    width: 130rem;
+    height: 5rem;
+    padding: 2rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

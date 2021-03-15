@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/sass/main.scss" />
     <script defer src="src/js/controller.js"></script>
 
     <title>Movie App Vanilla JS</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="src/img/logo-white.png" alt="logo" class="header__logo" />
+        <form class="search">
+          <input
+            type="text"
+            class="search__field"
+            placeholder="Search over 1,000,000 movies"
+          />
+        </form>
+      </header>
+    </div>
+  </body>
 </html>
