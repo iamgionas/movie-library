@@ -1,2 +1,12 @@
 @import 'base';
 @import 'header';
+@import 'movies';
+
+
+/*
+*  % (fonts)    -> x% * parent's computed font-size
+*  % (lengths)  -> x% * parent's computed width
+*  em (font)    -> x * parent computed font-size
+*  em (lenghts) -> x * current element computed font-size
+*  rem          -> x * root computed font-size
+*/

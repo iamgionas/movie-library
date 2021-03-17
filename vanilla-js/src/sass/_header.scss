@@ -1,21 +1,26 @@
 .header {
   display: flex;
   align-items: center;
+  height: 15vh;
 
   &__logo {
-    height: 250px;
+    height: 12rem;
   }
 }
 
 .search {
-  background-color: #2B2B37;
+  background-color:#2B2B37;
   border-radius: 1.5rem;
   padding-left: 3rem;
   transition: all 0.3s;
+  flex-grow: 1;
+  margin: 0 10rem;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all .2s;
 
-  &:focus-within {
-    transform: translateY(-2px);
-    box-shadow: 0 0.7rem 3rem rgba(#615551, 0.08);
+  &:hover {
+    transform: translateY(-0.2rem);
   }
 
   &__field {
@@ -24,12 +29,13 @@
     font-family: inherit;
     color: inherit;
     font-size: 1.7rem;
-    width: 130rem;
     height: 5rem;
     padding: 2rem;
+    width: 100%;
 
     &:focus {
       outline: none;
     }
   }
+
 }
