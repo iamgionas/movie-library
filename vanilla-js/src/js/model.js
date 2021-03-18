@@ -12,7 +12,7 @@ export const state = {
 
 export const loadNowMovies = async function () {
   try {
-    state.search.query = 'Now Movies';
+    state.search.query = 'Popular Movies';
     const data = await getJSON(
       `${API_URL}3/movie/popular?api_key=${API_KEY}&language=en-US`
     );

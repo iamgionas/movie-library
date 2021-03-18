@@ -1,8 +1,18 @@
 .movies {
-  margin: 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 3rem;
+  margin: 2rem 5rem 5rem 5rem;
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+  &__list {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+  }
 }
 
 .movie {

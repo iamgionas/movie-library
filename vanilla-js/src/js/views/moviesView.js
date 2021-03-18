@@ -4,7 +4,12 @@ class MoviesView extends View {
   _parentElement = document.querySelector('.movies');
 
   _generateMarkup() {
-    return this._data.map(this._generateMarkupMovie).join('');
+    return `
+      <div class="movies__title">${this._data.query}</div>
+      <div class="movies__list">${this._data.results
+        .map(this._generateMarkupMovie)
+        .join('')}</div>
+    `;
   }
 
   _generateMarkupMovie(movie) {

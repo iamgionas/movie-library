@@ -10,7 +10,7 @@ const controlNowMovies = async function () {
     console.log('loadMovies', model.state.search.results);
 
     // 2) Rendering recipe
-    moviesView.render(model.state.search.results);
+    moviesView.render(model.state.search);
   } catch (err) {
     //recipeView.renderError();
   }
