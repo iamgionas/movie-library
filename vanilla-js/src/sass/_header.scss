@@ -9,18 +9,18 @@
 }
 
 .search {
-  background-color:#2B2B37;
+  background-color: #242a31;
   border-radius: 1.5rem;
-  padding-left: 3rem;
+  padding: 0 3rem 0 3rem;
   transition: all 0.3s;
   flex-grow: 1;
   margin: 0 10rem;
   color: #fff;
-  border: 2px solid #fff;
-  transition: all .2s;
+  display: flex;
+  align-items: center;
 
-  &:hover {
-    transform: translateY(-0.2rem);
+  &__icon {
+    font-size: 2rem;
   }
 
   &__field {
@@ -37,5 +37,4 @@
       outline: none;
     }
   }
-
 }

@@ -4,14 +4,17 @@
   "description": "Movie library made with vanilla js",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel serve index.html",
     "build": "parcel build index.html"
   },
   "author": "Gionas",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-nightly.628",
-    "parcel": "^2.0.0-beta.1",
-    "sass": "^1.26.10"
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "core-js": "^3.9.1"
   }
 }

@@ -1,5 +1,4 @@
 .movies {
-  height: 85vh;
   margin: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -9,4 +8,44 @@
 .movie {
   background-color: #242a31;
   border-radius: 2rem;
+  color: #fff;
+  padding: 1rem;
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: auto 1fr;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.2rem);
+  }
+
+  &__poster {
+    width: 10rem;
+    border-radius: 2rem;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+  }
+
+  &__title {
+    font-weight: 100;
+    font-size: 1.8rem;
+  }
+
+  &__vote {
+    color: #f5ca5a;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: baseline;
+    &__icon {
+      margin-right: 0.2rem;
+    }
+  }
+  &__date {
+    font-size: 1.3rem;
+  }
 }
