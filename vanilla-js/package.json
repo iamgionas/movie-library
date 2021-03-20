@@ -2,10 +2,10 @@
   "name": "movie-vanilla-js",
   "version": "1.0.0",
   "description": "Movie library made with vanilla js",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
     "start": "parcel serve index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Gionas",
   "license": "ISC",
