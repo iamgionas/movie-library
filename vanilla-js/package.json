@@ -1,5 +1,5 @@
 {
-  "name": "movie-vanilla-js",
+  "name": "movie-app-vanilla-js",
   "version": "1.0.0",
   "description": "Movie library made with vanilla js",
   "default": "index.html",
