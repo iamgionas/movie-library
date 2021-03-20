@@ -15,7 +15,7 @@ class MoviesView extends View {
   _generateMarkupMovie(movie) {
     return `
       <div class="movie">
-        <img class="movie__poster" src="https://image.tmdb.org/t/p/w200/${
+        <img class="movie__poster" src="https://image.tmdb.org/t/p/w500/${
           movie.poster
         }">
         <div class="movie__info">
