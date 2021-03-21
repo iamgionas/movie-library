@@ -2,6 +2,7 @@ import { API_KEY, API_URL, RES_PER_PAGE } from './config.js';
 import { getJSON } from './helpers.js';
 
 export const state = {
+  movie: {},
   search: {
     query: '',
     results: [],
@@ -32,7 +33,6 @@ export const loadNowMovies = async function () {
 };
 
 export const loadSearchResults = async function (query) {
-  console.log('Query', query);
   try {
     state.search.query = `Search: "${query}"`;
     const data = await getJSON(
@@ -51,4 +51,11 @@ export const loadSearchResults = async function (query) {
   } catch (error) {
     throw error;
   }
+};
+
+export const loadMovie = async function (id) {
+  const data = await getJSON(
+    `${API_URL}3/movie/${id}?api_key=${API_KEY}&language=en-US`
+  );
+  // state.movie
 };

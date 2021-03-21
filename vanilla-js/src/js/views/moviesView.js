@@ -3,6 +3,16 @@ import View from './View.js';
 class MoviesView extends View {
   _parentElement = document.querySelector('.movies');
 
+  addHandlerOpenMovie() {
+    this._parentElement.addEventListener('click', function (e) {
+      const movie = e.target.closest('.movie');
+      if (!movie) return;
+
+      const { movieId } = movie.dataset;
+      window.location = `#${movieId}`;
+    });
+  }
+
   _generateMarkup() {
     return `
       <div class="movies__title">${this._data.query}</div>
@@ -14,8 +24,8 @@ class MoviesView extends View {
 
   _generateMarkupMovie(movie) {
     return `
-      <div class="movie">
-        <img class="movie__poster" src="https://image.tmdb.org/t/p/w500/${
+      <div class="movie" data-movie-id="${movie.id}">
+        <img class="movie__poster" src="https://image.tmdb.org/t/p/w200/${
           movie.poster
         }">
         <div class="movie__info">

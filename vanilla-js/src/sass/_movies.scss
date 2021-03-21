@@ -16,6 +16,7 @@
 }
 
 .movie {
+  height: 17rem;
   background-color: #242a31;
   border-radius: 2rem;
   color: #fff;
@@ -24,6 +25,10 @@
   column-gap: 2rem;
   grid-template-columns: auto 1fr;
   transition: all 0.2s;
+
+  a {
+    display: block;
+  }
 
   &:hover {
     cursor: pointer;
@@ -42,7 +47,7 @@
 
   &__title {
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   &__vote {
