@@ -1,6 +1,9 @@
 .header {
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 
   &__logo {
     height: 12rem;
@@ -12,11 +15,12 @@
   border-radius: 1.5rem;
   padding: 0 3rem 0 3rem;
   transition: all 0.3s;
-  flex-grow: 1;
+  flex-grow: 2;
   margin: 0 10rem;
   color: #fff;
   display: flex;
   align-items: center;
+  width: 85%;
 
   &__icon {
     font-size: 2rem;
