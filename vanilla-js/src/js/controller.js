@@ -40,6 +40,9 @@ const controlMovie = async function () {
 
   // 2) Load search results
   await model.loadMovie(id);
+
+  // 3) Render results
+  movieView.render(model.state.movie);
 };
 
 const init = function () {
@@ -51,6 +54,7 @@ const init = function () {
   moviesView.addHandlerOpenMovie();
   // Control the load of the movie
   movieView.addHandlerRender(controlMovie);
+  movieView.addHandlerCloseMovie();
 };
 
 init();

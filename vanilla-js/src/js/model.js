@@ -57,5 +57,5 @@ export const loadMovie = async function (id) {
   const data = await getJSON(
     `${API_URL}3/movie/${id}?api_key=${API_KEY}&language=en-US`
   );
-  // state.movie
+  state.movie = data;
 };
