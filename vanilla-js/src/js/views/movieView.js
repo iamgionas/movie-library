@@ -15,8 +15,9 @@ class MovieView extends View {
     this._parentElement.addEventListener('click', function (e) {
       const movie = e.target.closest('.popup');
       if (!movie) return;
+
       movie.remove();
-      window.location = '#';
+      window.history.pushState('', '', '/');
     });
   }
 
@@ -29,10 +30,10 @@ class MovieView extends View {
   closeMovie() {}
 
   _generateMarkup() {
-    console.log(this._data.id);
+    console.log(this._data);
     return `
-      <div class="popup" id="${this._data.id}">
-        <div class="popup__content"></div>
+      <div class="popup">
+        <div class="popup__content"><h1>${this._data.title}</h1></div>
       </div>
     `;
   }
