@@ -59,3 +59,7 @@ export const loadMovie = async function (id) {
   );
   state.movie = data;
 };
+
+export const removeMovie = function () {
+  state.movie = {};
+};

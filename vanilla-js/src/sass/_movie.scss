@@ -11,10 +11,32 @@
 
   &__content {
     width: 75%;
-    height: 50rem;
+
+    height: 25rem;
     background-color: white;
     border-radius: 2rem;
-    padding: 5rem;
     color: black;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  &__close {
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  &__img {
+    height: 25rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  &__info {
+    display: grid;
+    padding: 2rem;
   }
 }

@@ -35,14 +35,27 @@ const controlSearchResults = async function () {
 };
 
 const controlMovie = async function () {
-  const id = window.location.hash.slice(1);
-  if (!id) return;
+  try {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
 
-  // 2) Load search results
-  await model.loadMovie(id);
+    // 2) Load search results
+    await model.loadMovie(id);
 
-  // 3) Render results
-  movieView.render(model.state.movie);
+    // 3) Render results
+    movieView.render(model.state.movie);
+  } catch (error) {}
+};
+
+const controlClose = function () {
+  // 1) Remove movie from state
+  model.removeMovie();
+
+  // 2) Remove movie view
+  movieView.close();
+
+  // 3) Remove id from address
+  window.history.pushState('', '', '/');
 };
 
 const init = function () {
@@ -50,11 +63,9 @@ const init = function () {
   controlNowMovies();
   // Control the search view
   searchView.addHandlerSearch(controlSearchResults);
-  // Control the click on movie on the movies list
-  moviesView.addHandlerOpenMovie();
   // Control the load of the movie
   movieView.addHandlerRender(controlMovie);
-  movieView.addHandlerCloseMovie();
+  movieView.addHandlerClose(controlClose);
 };
 
 init();
