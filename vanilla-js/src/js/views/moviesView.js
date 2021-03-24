@@ -25,15 +25,17 @@ class MoviesView extends View {
   _generateMarkupMovie(movie) {
     return `
       <div class="movie" data-movie-id="${movie.id}">
-        <img class="movie__poster" src="https://image.tmdb.org/t/p/w200/${
+        <img class="movie__poster" src="https://image.tmdb.org/t/p/w400${
           movie.poster
         }">
         <div class="movie__info">
-          <h1 class="movie__title">${movie.title}</h1>
+          <h2 class="movie__title">${movie.title}</h2>
           <div class="movie__vote"><i class="fas fa-star movie__vote__icon"></i>${
             movie.vote
           }</div>
-          <div class="movie__date">${new Date(movie.date).getFullYear()}</div>
+          <!-- <div class="movie__date">${new Date(
+            movie.date
+          ).getFullYear()}</div>-->
         </div>
       </div>
     `;
