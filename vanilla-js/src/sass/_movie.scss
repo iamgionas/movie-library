@@ -11,7 +11,6 @@
 
   &__content {
     width: 75%;
-
     height: 25rem;
     background-color: white;
     border-radius: 2rem;
@@ -25,7 +24,7 @@
     color: black;
     font-size: 2rem;
     position: absolute;
-    top: 0;
+    top: 0.5rem;
     right: 1rem;
     cursor: pointer;
   }
@@ -36,7 +35,23 @@
   }
 
   &__info {
-    display: grid;
     padding: 2rem;
+  }
+
+  &__overview {
+    margin-top: 2rem;
+    text-align: justify;
+  }
+
+  &__genres {
+    display: flex;
+    margin-top: 2rem;
+    div {
+      margin: 0 2rem 0 0;
+      background: #28313b;
+      padding: 0.6rem;
+      border-radius: 1.5rem;
+      color: #fff;
+    }
   }
 }

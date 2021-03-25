@@ -40,17 +40,23 @@ class MovieView extends View {
       <div class="popup">
         <div class="popup__content">
           <a class="popup__close"><i class="fas fa-times-circle"></i></a>
-          <img class="popup__img" src="https://image.tmdb.org/t/p/w400${
+          <img class="popup__img" src="https://image.tmdb.org/t/p/w500${
             this._data.backdrop_path
           }">
           <div class="popup__info">
-          <h1>${this._data.title}</h1>
-          <div>${this._data.overview}</div>
-          <div>${this._data.genres.map((genere) => genere.name).join('')}
+            <h1 class="popup__title">${this._data.title}</h1>
+            <div class="popup__overview">${this._data.overview}</div>
+            <div class="popup__genres">
+              ${this._data.genres.map(this._generateGenresMarkup).join('')}
+            </div>
           </div>
         </div>
       </div>
     `;
+  }
+
+  _generateGenresMarkup(genre) {
+    return `<div>${genre.name}</div>`;
   }
 }
 
