@@ -10,18 +10,19 @@
   align-items: center;
 
   &__content {
-    width: 75%;
-    height: 25rem;
+    width: 50rem;
     background-color: white;
     border-radius: 2rem;
     color: black;
     position: relative;
-    display: grid;
-    grid-template-columns: auto 1fr;
+
+    @media only screen and (max-width: 30em) {
+      width: 80vw;
+    }
   }
 
   &__close {
-    color: black;
+    color: #fed049;
     font-size: 2rem;
     position: absolute;
     top: 0.5rem;
@@ -30,28 +31,38 @@
   }
 
   &__img {
-    height: 25rem;
-    border-radius: 2rem 0 0 2rem;
+    width: 50rem;
+    border-radius: 2rem 2rem 0 0;
+    @media only screen and (max-width: 30em) {
+      width: 80vw;
+    }
   }
 
   &__info {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
   }
 
   &__overview {
-    margin-top: 2rem;
+    margin-top: 1rem;
+
     text-align: justify;
   }
 
   &__genres {
     display: flex;
     margin-top: 2rem;
+    text-align: center;
+
     div {
       margin: 0 2rem 0 0;
       background: #28313b;
-      padding: 0.6rem;
+      flex-basis: 100%;
       border-radius: 1.5rem;
       color: #fff;
+      padding: 1rem 0 1rem 0;
     }
   }
 }
