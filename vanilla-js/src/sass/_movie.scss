@@ -50,23 +50,21 @@
 
   &__overview {
     margin-top: 1rem;
-
     text-align: justify;
   }
 
   &__genres {
     display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
     text-align: center;
 
     div {
-      margin: 0 2rem 0 0;
+      margin: 0.5rem;
       background: #28313b;
-      flex-basis: 100%;
       border-radius: 1.5rem;
       color: #fff;
-      padding: 1rem 0 1rem 0;
+      padding: 0.2rem 1rem 0.2rem 1rem;
     }
   }
 }

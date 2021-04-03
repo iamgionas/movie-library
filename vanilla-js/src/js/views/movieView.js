@@ -45,6 +45,7 @@ class MovieView extends View {
           }">
           <div class="popup__info">
             <h1 class="popup__title">${this._data.title}</h1>
+            <div>${new Date(this._data.release_date).getFullYear()}</div>
             <div class="popup__overview">${this._data.overview}</div>
             <div class="popup__genres">
               ${this._data.genres.map(this._generateGenresMarkup).join('')}
