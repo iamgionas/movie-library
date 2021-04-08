@@ -1,6 +1,6 @@
-# Movie Application
+# Movie Library
 
-Simple movie application made using HTML, SASS and Vanilla JS.
+Simple movie library made using HTML, SASS and Vanilla JS.
 
 I used [TMDB](https://www.themoviedb.org/documentation/api) and the project is deployed on [Netlify](https://www.netlify.com/)
 
