@@ -1,7 +1,7 @@
 {
-  "name": "movie-app-vanilla-js",
+  "name": "movie-library",
   "version": "1.0.0",
-  "description": "Movie library made with vanilla js",
+  "description": "Simple movie library made using HTML, SASS and Vanilla JS.",
   "default": "index.html",
   "scripts": {
     "start": "parcel serve index.html",
