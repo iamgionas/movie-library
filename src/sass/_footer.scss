@@ -1,0 +1,8 @@
+.footer {
+  display: grid;
+  justify-items: center;
+  margin: 2rem;
+  &__logo {
+    height: 2rem;
+  }
+}

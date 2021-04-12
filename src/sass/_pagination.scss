@@ -1,0 +1,19 @@
+.pagination {
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__btn {
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    background-color: #242a31;
+    color: white;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-0.5rem);
+    }
+  }
+}
