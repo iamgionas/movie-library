@@ -3,12 +3,22 @@ export default class View {
 
   render(data) {
     this._data = data;
-    const markup = this._generateMarkup();
     this._clear();
+    const markup = this._generateMarkup();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
   _clear() {
     this._parentElement.innerHTML = '';
+  }
+
+  renderSpinner() {
+    const markup = `
+      <div class="spinner">
+        <i class="fas fa-circle-notch"></i>
+      </div>
+    `;
+    this._clear();
+    this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 }

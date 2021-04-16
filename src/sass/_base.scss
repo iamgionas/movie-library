@@ -26,3 +26,24 @@ body {
   min-height: 100vh;
   background: linear-gradient(315deg, (#485461 0%, #28313b 74%));
 }
+
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+
+  i {
+    height: 6rem;
+    width: 6rem;
+    animation: rotate 2s infinite linear;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

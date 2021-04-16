@@ -7,6 +7,9 @@ import searchView from './views/searchView.js';
 
 const controlNowMovies = async function () {
   try {
+    // 0) Rendering spinner
+    moviesView.renderSpinner();
+
     // 1) Loading now moves
     await model.loadNowMovies();
 
@@ -17,16 +20,19 @@ const controlNowMovies = async function () {
   }
 };
 
-const controlSearchResults = async function () {
+const controlSearchMovies = async function () {
   try {
-    // 1) Get search query
+    // 0) Rendering spinner
+    moviesView.renderSpinner();
+
+    // 1) Gettinsearch query
     const query = searchView.getQuery();
     if (!query) return;
 
-    // 2) Load search results
-    await model.loadSearchResults(query);
+    // 2) Loading search results
+    await model.loadSearchMovies(query);
 
-    // 3) Render results
+    // 3) Rendering results
     moviesView.render(model.state.search);
 
     // 4) Render initial pagination buttons
@@ -34,20 +40,20 @@ const controlSearchResults = async function () {
   } catch (error) {}
 };
 
-const controlMovie = async function () {
+const controlOpenMovie = async function () {
   try {
     const id = window.location.hash.slice(1);
     if (!id) return;
 
-    // 2) Load search results
+    // 1) Loading selected movie
     await model.loadMovie(id);
 
-    // 3) Render results
+    // 3) Rendering selected movie
     movieView.render(model.state.movie);
   } catch (error) {}
 };
 
-const controlClose = function () {
+const controlCloseMovie = function () {
   // 1) Remove movie from state
   model.removeMovie();
 
@@ -59,13 +65,13 @@ const controlClose = function () {
 };
 
 const init = function () {
-  // Load Popular Movies
+  // Loading Popular Movies
   controlNowMovies();
   // Control the search view
-  searchView.addHandlerSearch(controlSearchResults);
-  // Control the load of the movie
-  movieView.addHandlerRender(controlMovie);
-  movieView.addHandlerClose(controlClose);
+  searchView.addHandlerSearch(controlSearchMovies);
+  // Control the movie load
+  movieView.addHandlerRender(controlOpenMovie);
+  movieView.addHandlerClose(controlCloseMovie);
 };
 
 init();
