@@ -35,7 +35,6 @@ class MovieView extends View {
   }
 
   _generateMarkup() {
-    console.log(this._data);
     return `
       <div class="popup">
         <div class="popup__content">

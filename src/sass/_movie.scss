@@ -10,7 +10,7 @@
   align-items: center;
 
   &__content {
-    width: 50rem;
+    width: 49.8rem;
     background-color: white;
     border-radius: 2rem;
     color: black;
@@ -34,7 +34,7 @@
   }
 
   &__img {
-    width: 50rem;
+    height: 28rem;
     border-radius: 2rem 2rem 0 0;
     @media only screen and (max-width: 30em) {
       width: 80vw;
