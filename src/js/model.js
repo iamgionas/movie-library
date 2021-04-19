@@ -36,6 +36,8 @@ export const loadSearchMovies = async function (query, page = 1) {
 
     state.search.query = `Search: "${query}"`;
     state.search.page = page;
+    state.search.totalPages = data.total_pages;
+    state.search.totalResults = data.totalResults;
 
     loadMoviesToState(data);
   } catch (error) {
