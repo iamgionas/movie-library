@@ -13,14 +13,16 @@ export const state = {
   },
 };
 
-export const loadNowMovies = async function () {
+export const loadNowMovies = async function (page = 1) {
   try {
     const data = await getJSON(
-      `${API_URL}3/movie/popular?api_key=${API_KEY}&language=en-US`
+      `${API_URL}3/movie/popular?api_key=${API_KEY}&page=${page}`
     );
 
     state.search.query = 'Popular Movies';
     state.search.page = 1;
+    state.search.totalPages = data.total_pages;
+    state.search.totalResults = data.total_results;
 
     loadMoviesToState(data);
   } catch (error) {
@@ -34,10 +36,10 @@ export const loadSearchMovies = async function (query, page = 1) {
       `${API_URL}3/search/movie?api_key=${API_KEY}&query=${query}&page=${page}`
     );
 
-    state.search.query = `Search: "${query}"`;
+    state.search.query = query;
     state.search.page = page;
     state.search.totalPages = data.total_pages;
-    state.search.totalResults = data.totalResults;
+    state.search.totalResults = data.total_results;
 
     loadMoviesToState(data);
   } catch (error) {

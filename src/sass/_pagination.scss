@@ -1,7 +1,9 @@
 .pagination {
   margin: 0 2rem 0 2rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:"prev next";
 
   &__btn {
     border-radius: 1rem;
@@ -14,6 +16,16 @@
     &:hover {
       cursor: pointer;
       transform: translateY(-0.5rem);
+    }
+
+    &--prev {
+      justify-self: start;
+      grid-area: prev;
+    }
+
+    &--next {
+      justify-self: end;
+      grid-area: next;
     }
   }
 }
