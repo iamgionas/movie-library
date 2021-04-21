@@ -1,4 +1,5 @@
 import View from './View.js';
+import imageUrl from "url:../../img/not_image.png";
 
 class MoviesView extends View {
   _parentElement = document.querySelector('.movies');
@@ -15,9 +16,7 @@ class MoviesView extends View {
   _generateMarkupMovie(movie) {
     return `
       <a class="movie" href="#${movie.id}">
-        <img class="movie__poster" src="https://image.tmdb.org/t/p/w400${
-          movie.poster
-        }">
+        <img class="movie__poster" src="${movie.poster ? `https://image.tmdb.org/t/p/w400${movie.poster}` : imageUrl}">
         <div class="movie__vote"><i class="fas fa-star movie__vote__icon"></i>${movie.vote.toFixed(
           1
         )}</div>
