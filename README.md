@@ -1,17 +1,3 @@
-# Movie Library
-
-Description: A simple movie library to find information about films.
-
-Technologies: HTML5, SASS and Vanilla JS.
-
-Patterns: MVC, Module
-
-API: [TMDB](https://www.themoviedb.org/documentation/api)
-
-Deploy: [Netlify](https://www.netlify.com/)
-
-[Check it here](https://movie-library-vanilla-js.netlify.app/)
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
