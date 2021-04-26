@@ -1,4 +1,4 @@
-git[![Netlify Status](https://api.netlify.com/api/v1/badges/938c81cf-b34e-48ed-b0ff-98ac6f815f43/deploy-status)](https://app.netlify.com/sites/movie-library-vanilla-js/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/938c81cf-b34e-48ed-b0ff-98ac6f815f43/deploy-status)](https://app.netlify.com/sites/movie-library-vanilla-js/deploys)
 
 <br />
 <p align="center">
