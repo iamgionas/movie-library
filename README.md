@@ -1,25 +1,7 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Netlify Status](https://api.netlify.com/api/v1/badges/938c81cf-b34e-48ed-b0ff-98ac6f815f43/deploy-status)](https://app.netlify.com/sites/movie-library-vanilla-js/deploys)
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/gionasdev/movie-library">
     <img src="src/img/logo-white.png" alt="Logo" width="150" height="150">
   </a>
 
@@ -30,21 +12,17 @@
     <br />
     <br />
     <a href="https://movie-library-vanilla-js.netlify.app/">View Demo</a>
-    ·
-    <a href="https://github.com/gionasdev/movie-library/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/gionasdev/movie-library/issues">Request Feature</a>
   </p>
 </p>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/938c81cf-b34e-48ed-b0ff-98ac6f815f43/deploy-status)](https://app.netlify.com/sites/movie-library-vanilla-js/deploys)
 
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Simple moive library to find informations about films. I used **MVC pattern** and the last **ES6 Features**.
 
-...
-
-### Built With
+## Built With
 
 * HTML5
 * SASS
@@ -97,20 +75,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Gionas - [@gionasdev](https://twitter.com/gionasdev) - hello@gionas.dev
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
 
