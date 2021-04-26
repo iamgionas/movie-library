@@ -1,4 +1,5 @@
-<!-- PROJECT LOGO -->
+git[![Netlify Status](https://api.netlify.com/api/v1/badges/938c81cf-b34e-48ed-b0ff-98ac6f815f43/deploy-status)](https://app.netlify.com/sites/movie-library-vanilla-js/deploys)
+
 <br />
 <p align="center">
   <a href="https://github.com/gionasdev/movie-library">
@@ -14,8 +15,6 @@
     <a href="https://movie-library-vanilla-js.netlify.app/">View Demo</a>
   </p>
 </p>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/938c81cf-b34e-48ed-b0ff-98ac6f815f43/deploy-status)](https://app.netlify.com/sites/movie-library-vanilla-js/deploys)
 
 
 ## About The Project
@@ -55,7 +54,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 4. Enter your API in `config.js`
    ```JS
-   const API_KEY = 'ENTER YOUR API';
+   export const API_KEY = 'ENTER YOUR API';
    ```
 
 <!-- USAGE EXAMPLES -->
