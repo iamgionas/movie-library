@@ -9,7 +9,7 @@
   <h3 align="center">Movie Library</h3>
 
   <p align="center">
-    A simple movie library to find informations about films
+    A simple movie library to find information about films
     <br />
     <br />
     <a href="https://movie-library-vanilla-js.netlify.app/">View Demo</a>
@@ -19,7 +19,7 @@
 
 ## About The Project
 
-Simple moive library to find informations about films. I used **MVC pattern** and the last **ES6 Features**.
+Simple movie library to find information about films. I used **MVC pattern** and the last **ES6 Features**.
 
 ## Built With
 
