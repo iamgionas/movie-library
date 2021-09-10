@@ -19,7 +19,7 @@
 
 ## About The Project
 
-Simple movie library to find information about films. I used **MVC pattern** and the last **ES6 Features**.
+Simple movie library to find information about films. I used **MVC pattern** and the latest **ES6 Features**.
 
 ## Built With
 
