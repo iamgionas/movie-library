@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/gionasdev/movie-library">
-    <img src="src/img/logo-white.png" alt="Logo" width="150" height="150">
+    <img src="src/img/logo.png" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">Movie Library</h3>
@@ -16,27 +16,27 @@
   </p>
 </p>
 
-
 ## About The Project
 
 Simple movie library to find information about films. I used **MVC pattern** and the latest **ES6 Features**.
 
 ## Built With
 
-* HTML5
-* SASS
-* Vanilla JS
-* [ParcelJS](https://parceljs.org/)
-* [Fort Awesome](https://fortawesome.com/)
+- HTML5
+- SASS
+- Vanilla JS
+- [ParcelJS](https://parceljs.org/)
+- [Fort Awesome](https://fortawesome.com/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* npm
+- npm
   ```sh
   npm install npm@latest -g
   ```
@@ -58,20 +58,22 @@ To get a local copy up and running follow these simple example steps.
    ```
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
-* Start the website, inside root project folder
+- Start the website, inside root project folder
   ```sh
   npm start
   ```
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Gionas - [@gionasdev](https://twitter.com/gionasdev) - hello@gionas.dev
-
